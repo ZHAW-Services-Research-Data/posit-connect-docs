@@ -3,6 +3,10 @@
 # ---------------------------------------------------------------------------
 site_name: "Posit Connect – Dokumentation"
 site_description: "Interne Dokumentation für Posit Connect an der ZHAW"
+# site_url must be the full base URL so that alternate links resolve correctly
+# on GitHub Pages project sites (which are served under a subdirectory).
+# Update this if you use a custom domain.
+site_url: https://zhaw.github.io/posit-connect-docs/
 repo_url: https://github.com/zhaw/posit-connect-docs
 repo_name: zhaw/posit-connect-docs
 
@@ -37,15 +41,16 @@ extra_css:
 
 # ---------------------------------------------------------------------------
 # Language switcher — renders the globe icon + dropdown in the Material header.
-# "link" must match where mkdocs-static-i18n publishes each locale.
+# Full absolute URLs are required; root-relative paths (/en/) break on GitHub
+# Pages project sites because the site is not served from the domain root.
 # ---------------------------------------------------------------------------
 extra:
   alternate:
     - name: Deutsch
-      link: /
+      link: https://zhaw.github.io/posit-connect-docs/
       lang: de
     - name: English
-      link: /en/
+      link: https://zhaw.github.io/posit-connect-docs/en/
       lang: en
 
 # ---------------------------------------------------------------------------
