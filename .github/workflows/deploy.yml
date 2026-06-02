@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# Deploy MkDocs to GitHub Pages
+#
+# Trigger: every push to the main branch.
+# The built site is pushed to the gh-pages branch by peaceiris/actions-gh-pages,
+# which GitHub Pages then serves automatically.
+# ---------------------------------------------------------------------------
+name: Deploy docs
+
+on:
+  push:
+    branches:
+      - main   # only deploy from the main branch
+
+# Allow the workflow to write to the repository (needed to push gh-pages).
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the source code so subsequent steps can read it.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up the Python version required to install MkDocs and its theme.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. Install MkDocs and the Material theme.
+      #    Pin versions here if you need reproducible builds, e.g.:
+      #      mkdocs==1.6.0
+      #      mkdocs-material==9.5.0
+      - name: Install dependencies
+        run: pip install mkdocs mkdocs-material
+
+      # 4. Build the static site into the ./site directory.
+      #    MkDocs reads mkdocs.yml and writes HTML/CSS/JS to ./site.
+      - name: Build site
+        run: mkdocs build --strict
+
+      # 5. Push the contents of ./site to the gh-pages branch.
+      #    peaceiris/actions-gh-pages handles creating or force-updating that
+      #    branch and sets the correct commit author automatically.
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site   # directory produced by mkdocs build

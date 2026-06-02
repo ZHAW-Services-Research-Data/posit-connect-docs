@@ -1,0 +1,44 @@
+# ---------------------------------------------------------------------------
+# Site metadata
+# ---------------------------------------------------------------------------
+site_name: "Posit Connect – Dokumentation"
+site_description: "Interne Dokumentation für Posit Connect an der ZHAW"
+repo_url: https://github.com/zhaw/posit-connect-docs
+repo_name: zhaw/posit-connect-docs
+
+# ---------------------------------------------------------------------------
+# Theme — Material for MkDocs
+# Primary color uses ZHAW corporate blue (#007A96).
+# The palette block sets both light/dark scheme defaults.
+# ---------------------------------------------------------------------------
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: custom   # resolved via extra_css below to #007A96
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  language: de
+  features:
+    - navigation.top   # back-to-top button
+
+# ---------------------------------------------------------------------------
+# Custom CSS — overrides the Material primary color with the exact ZHAW hex.
+# The file must exist at docs/stylesheets/extra.css.
+# ---------------------------------------------------------------------------
+extra_css:
+  - stylesheets/extra.css
+
+# ---------------------------------------------------------------------------
+# Navigation — list pages explicitly so the order is predictable.
+# Each entry is: "Menu label": path/to/file.md
+# ---------------------------------------------------------------------------
+nav:
+  - Home: index.md
+  - Erste Schritte: erste-schritte.md

@@ -1,0 +1,6 @@
+/* Override Material's "custom" primary color with ZHAW blue */
+:root {
+  --md-primary-fg-color: #007A96;
+  --md-primary-fg-color--light: #339ab0;
+  --md-primary-fg-color--dark: #005f74;
+}
