@@ -1,6 +1,51 @@
-/* Override Material's "custom" primary color with ZHAW blue */
+/* ── ZHAW brand colors ──────────────────────────────────────────────────────
+   #0064a6 matches the Shiny dashboard template exactly.
+   Material resolves "primary: custom" through these three variables.        */
 :root {
-  --md-primary-fg-color: #007A96;
-  --md-primary-fg-color--light: #339ab0;
-  --md-primary-fg-color--dark: #005f74;
+  --md-primary-fg-color:        #0064a6;
+  --md-primary-fg-color--light: #3385bc;
+  --md-primary-fg-color--dark:  #004e82;
+
+  /* Schutzzone: 1/3 of logo height on all sides, per ZHAW CD */
+  --logo-height: 40px;
+  --schutzzone:  calc(var(--logo-height) / 3);
+}
+
+/* ── Typography ─────────────────────────────────────────────────────────────
+   Arial is mandatory per ZHAW corporate design guidelines.
+   font: false in mkdocs.yml disables the Google Fonts request.             */
+body,
+.md-typeset,
+.md-nav,
+.md-search__input {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ── Content area ───────────────────────────────────────────────────────────
+   White background, black body text — matches the Shiny template.          */
+.md-main,
+.md-content {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────────
+   Blue background is provided by --md-primary-fg-color above.
+   Apply Schutzzone padding so the logo has the required clear space.       */
+.md-header__inner {
+  padding: var(--schutzzone) var(--app-padding-x, 30px);
+}
+
+.md-logo img {
+  height: var(--logo-height);
+  width: auto;
+}
+
+/* ── Links ──────────────────────────────────────────────────────────────────*/
+.md-typeset a {
+  color: #0064a6;
+}
+
+.md-typeset a:hover {
+  text-decoration: underline;
 }

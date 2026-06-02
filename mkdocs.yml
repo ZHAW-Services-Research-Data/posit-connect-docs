@@ -6,31 +6,27 @@ site_description: "Interne Dokumentation für Posit Connect an der ZHAW"
 # site_url must be the full base URL so that alternate links resolve correctly
 # on GitHub Pages project sites (which are served under a subdirectory).
 # Update this if you use a custom domain.
-site_url: https://zhaw.github.io/posit-connect-docs/
-repo_url: https://github.com/zhaw/posit-connect-docs
-repo_name: zhaw/posit-connect-docs
+site_url: https://zhaw-services-research-data.github.io/posit-connect-docs/
+repo_url: https://github.com/zhaw-services-research-data/posit-connect-docs
+repo_name: zhaw-services-research-data/posit-connect-docs
 
 # ---------------------------------------------------------------------------
 # Theme — Material for MkDocs
-# Primary color uses ZHAW corporate blue (#007A96).
-# The palette block sets both light/dark scheme defaults.
+# Primary color uses ZHAW corporate blue (#0064a6).
+# logo: place the white/negative ZHAW logo at docs/assets/logo.png.
+# font: false disables the Google Fonts request so we can use Arial via CSS.
 # ---------------------------------------------------------------------------
 theme:
   name: material
+  logo: assets/zhaw-logo-negativ.png   # white (negative) ZHAW logo — place file at docs/assets/logo.png
+  favicon: assets/zhaw-logo.png
+  font: false             # disable Google Fonts; Arial is set via extra_css
   palette:
-    - scheme: default
-      primary: custom   # resolved via extra_css below to #007A96
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: custom
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: default
+    primary: custom       # resolved via extra_css to #0064a6
   language: de
   features:
-    - navigation.top   # back-to-top button
+    - navigation.top      # back-to-top button
 
 # ---------------------------------------------------------------------------
 # Custom CSS — overrides the Material primary color with the exact ZHAW hex.
@@ -47,10 +43,10 @@ extra_css:
 extra:
   alternate:
     - name: Deutsch
-      link: https://zhaw.github.io/posit-connect-docs/
+      link: https://zhaw-services-research-data.github.io/posit-connect-docs/
       lang: de
     - name: English
-      link: https://zhaw.github.io/posit-connect-docs/en/
+      link: https://zhaw-services-research-data.github.io/posit-connect-docs/en/
       lang: en
 
 # ---------------------------------------------------------------------------
