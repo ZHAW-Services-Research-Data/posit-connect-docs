@@ -36,6 +36,19 @@ extra_css:
   - stylesheets/extra.css
 
 # ---------------------------------------------------------------------------
+# Language switcher — renders the globe icon + dropdown in the Material header.
+# "link" must match where mkdocs-static-i18n publishes each locale.
+# ---------------------------------------------------------------------------
+extra:
+  alternate:
+    - name: Deutsch
+      link: /
+      lang: de
+    - name: English
+      link: /en/
+      lang: en
+
+# ---------------------------------------------------------------------------
 # Plugins
 # mkdocs-static-i18n reads the file suffix (.en.md / .md) to serve translated
 # pages. "de" is the default; the English build is published under /en/.
