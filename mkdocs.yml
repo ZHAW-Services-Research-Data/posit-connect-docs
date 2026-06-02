@@ -36,6 +36,25 @@ extra_css:
   - stylesheets/extra.css
 
 # ---------------------------------------------------------------------------
+# Plugins
+# mkdocs-static-i18n reads the file suffix (.en.md / .md) to serve translated
+# pages. "de" is the default; the English build is published under /en/.
+# The language switcher appears automatically in the Material header.
+# Install: pip install mkdocs-static-i18n
+# ---------------------------------------------------------------------------
+plugins:
+  - search
+  - i18n:
+      default_language: de
+      languages:
+        de:
+          name: Deutsch
+          build: true
+        en:
+          name: English
+          build: true
+
+# ---------------------------------------------------------------------------
 # Navigation — list pages explicitly so the order is predictable.
 # Each entry is: "Menu label": path/to/file.md
 # ---------------------------------------------------------------------------
