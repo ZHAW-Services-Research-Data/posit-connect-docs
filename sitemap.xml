@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>None./</loc>
+        <loc>https://zhaw.github.io/posit-connect-docs/</loc>
         <lastmod>2026-06-02</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="None"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://zhaw.github.io/posit-connect-docs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zhaw.github.io/posit-connect-docs/en/"/>
     </url>
     <url>
-        <loc>Noneerste-schritte/</loc>
+        <loc>https://zhaw.github.io/posit-connect-docs/erste-schritte/</loc>
         <lastmod>2026-06-02</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="Noneerste-schritte/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/erste-schritte/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://zhaw.github.io/posit-connect-docs/erste-schritte/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zhaw.github.io/posit-connect-docs/en/erste-schritte/"/>
     </url>
     <url>
-        <loc>Noneen/</loc>
+        <loc>https://zhaw.github.io/posit-connect-docs/en/</loc>
         <lastmod>2026-06-02</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="None"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zhaw.github.io/posit-connect-docs/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://zhaw.github.io/posit-connect-docs/"/>
     </url>
     <url>
-        <loc>Noneen/erste-schritte/</loc>
+        <loc>https://zhaw.github.io/posit-connect-docs/en/erste-schritte/</loc>
         <lastmod>2026-06-02</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/erste-schritte/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Noneerste-schritte/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zhaw.github.io/posit-connect-docs/en/erste-schritte/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://zhaw.github.io/posit-connect-docs/erste-schritte/"/>
     </url>
 </urlset>
