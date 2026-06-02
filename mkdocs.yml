@@ -45,12 +45,13 @@ extra_css:
 plugins:
   - search
   - i18n:
-      default_language: de
+      docs_structure: suffix
       languages:
-        de:
+        - locale: de
+          default: true
           name: Deutsch
           build: true
-        en:
+        - locale: en
           name: English
           build: true
 
