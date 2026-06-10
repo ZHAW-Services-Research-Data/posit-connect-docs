@@ -6,20 +6,18 @@ site_description: "Interne Dokumentation für Posit Connect an der ZHAW"
 # site_url must be the full base URL so that alternate links resolve correctly
 # on GitHub Pages project sites (which are served under a subdirectory).
 # Update this if you use a custom domain.
-site_url: https://zhaw-services-research-data.github.io/posit-connect-docs/
-repo_url: https://github.com/zhaw-services-research-data/posit-connect-docs
-repo_name: zhaw-services-research-data/posit-connect-docs
+site_url: https://zhaw-dataservices.github.io/posit-connect-docs/
+repo_url: https://github.com/zhaw-dataservices/posit-connect-docs
+repo_name: zhaw-dataservices/posit-connect-docs
 
 # ---------------------------------------------------------------------------
 # Theme — Material for MkDocs
-# Primary color uses ZHAW corporate blue (#0064a6).
-# logo: place the white/negative ZHAW logo at docs/assets/logo.png.
 # font: false disables the Google Fonts request so we can use Arial via CSS.
 # ---------------------------------------------------------------------------
 theme:
   name: material
-  logo: assets/zhaw-logo-negativ.png   # white (negative) ZHAW logo — place file at docs/assets/logo.png
-  favicon: assets/zhaw-logo.png
+  logo: assets/zhaw-logo.svg
+  favicon: assets/zhaw-logo.svg
   font: false             # disable Google Fonts; Arial is set via extra_css
   palette:
     scheme: default
@@ -29,8 +27,7 @@ theme:
     - navigation.top      # back-to-top button
 
 # ---------------------------------------------------------------------------
-# Custom CSS — overrides the Material primary color with the exact ZHAW hex.
-# The file must exist at docs/stylesheets/extra.css.
+# Custom CSS
 # ---------------------------------------------------------------------------
 extra_css:
   - stylesheets/extra.css
@@ -43,10 +40,10 @@ extra_css:
 extra:
   alternate:
     - name: Deutsch
-      link: https://zhaw-services-research-data.github.io/posit-connect-docs/
+      link: https://zhaw-dataservices.github.io/posit-connect-docs/
       lang: de
     - name: English
-      link: https://zhaw-services-research-data.github.io/posit-connect-docs/en/
+      link: https://zhaw-dataservices.github.io/posit-connect-docs/en/
       lang: en
 
 # ---------------------------------------------------------------------------
