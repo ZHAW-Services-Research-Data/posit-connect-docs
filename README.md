@@ -2,7 +2,7 @@
 
 Documentation site for Posit Connect at ZHAW, built with [MkDocs](https://www.mkdocs.org/) and the [Material theme](https://squidfunk.github.io/mkdocs-material/).
 
-Published at: https://zhaw-services-research-data.github.io/posit-connect-docs/
+Published at: https://zhaw-dataservices.github.io/posit-connect-docs/
 
 ## Structure
 
@@ -13,7 +13,7 @@ docs/
   erste-schritte.md      # Getting Started (German)
   erste-schritte.en.md   # Getting Started (English)
   assets/
-    zhaw-logo-negativ.png  # White ZHAW logo for the header
+    zhaw-logo.svg          # ZHAW logo
   stylesheets/
     extra.css              # ZHAW branding overrides
 mkdocs.yml
