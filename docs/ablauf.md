@@ -4,7 +4,7 @@ Diese Seite beschreibt den gesamten Prozess – von der Entwicklung einer App bi
 
 ## Prozessübersicht
 
-<!-- TODO: Diagramm oder Schritt-für-Schritt-Übersicht einfügen -->
+![Ablauf im Überblick](assets/ablauf.svg)
 
 Die Schritte im Überblick:
 
