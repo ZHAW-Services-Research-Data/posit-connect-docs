@@ -72,4 +72,17 @@ plugins:
 # ---------------------------------------------------------------------------
 nav:
   - Home: index.md
-  - Erste Schritte: erste-schritte.md
+  - Ablauf im Überblick: ablauf.md
+  - Nutzungsabklärung: nutzungsabklaerung.md
+  - App entwickeln:
+    - Template verwenden: app-entwickeln/template.md
+    - Bestehende App einbinden: app-entwickeln/bestehende-app.md
+    - Best Practices: app-entwickeln/best-practices.md
+    - Datensparsamkeit & Daten: app-entwickeln/daten.md
+    - REDCap-Integration: app-entwickeln/redcap.md
+  - Code teilen & Deployment vorbereiten:
+    - Repository auf github.zhaw.ch: code-teilen/github-zhaw.md
+    - GitHub.com als Alternative: code-teilen/github-com.md
+    - manifest.json erstellen: code-teilen/manifest.md
+  - Deployment: deployment.md
+  - Support & FAQ: support.md
