@@ -4,7 +4,7 @@ This page describes the full process – from developing an app to publishing it
 
 ## Process Summary
 
-![Process Overview](assets/ablauf.svg)
+![Process Overview](assets/ablauf.en.svg)
 
 The steps at a glance:
 
